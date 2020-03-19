@@ -1,11 +1,17 @@
 <?php
 /**
- * Overrides to the FAQ plugin for the Safety site
+ * Overrides to the UCF FAQ plugin for the Safety site
  */
 
 namespace Safety\Utils\Plugins;
 
 
+/**
+ * Modifies registered ACF Fields in the UCF FAQ plugin.
+ *
+ * @since 1.0.0
+ * @author Jo Dickson
+ */
 function faq_acf_fields() {
 	// Can't get a local field, return.
 	if ( ! function_exists( 'acf_get_local_field' ) ) return;
